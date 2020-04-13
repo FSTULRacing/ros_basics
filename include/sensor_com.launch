@@ -1,0 +1,10 @@
+<launch>
+    
+    <param name = "sensor_name" value = "Humidity Temperature sensor"/>
+    <param name = "sensor_id" value = "1"/>
+
+    <node pkg = "ros_basics" type = "Sensor_publisher.py" name = "publisher" output = "screen" />
+    
+    <node pkg = "ros_basics" type = "Sensor_listener.py" name = "listeners" output = "screen" />
+
+</launch>
