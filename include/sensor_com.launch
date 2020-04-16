@@ -4,7 +4,11 @@
     <param name = "sensor_id" value = "1"/>
 
     <node pkg = "ros_basics" type = "Sensor_publisher.py" name = "publisher" output = "screen" />
-    
+
     <node pkg = "ros_basics" type = "Sensor_listener.py" name = "listeners" output = "screen" />
+
+    <node pkg="ros_basics" type="rectangle_area_server.py" name = "Rectengle_area_server" output = "screen" />
+
+    <node pkg="ros_basics" type="rectangle_area_client.py" name = "Rectengle_area_client" output = "screen" />
 
 </launch>

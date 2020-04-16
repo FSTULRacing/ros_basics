@@ -49,15 +49,14 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
  add_message_files(
    FILES
-   TempHumSensor.msg 
+   TempHumSensor.msg
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+ add_service_files(
+   FILES
+   RectangleArea.srv
+  )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -106,6 +105,7 @@ catkin_package(
   LIBRARIES ros_basics
   CATKIN_DEPENDS rospy std_msgs 
   DEPENDS system_lib
+  DEPENDS message_runtime
 )
 
 ###########
